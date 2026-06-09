@@ -17,7 +17,7 @@ let perfilAtual = {};
 let fotoSelecionada = null;
 
 function atualizarAvatar(src) {
-    const foto = src || IMAGEM_PADRAO;
+    const foto =  IMAGEM_PADRAO;
 
     if (perfilAvatar) {
         perfilAvatar.src = foto;
