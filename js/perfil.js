@@ -66,7 +66,6 @@ async function carregarPerfil() {
     try {
         const perfil = await apiRequest('/usuarios/perfil');
         renderizarPerfil(perfil || {});
-        mostrarResultado('Perfil carregado com sucesso.');
     } catch (erro) {
         mostrarResultado(`Falha ao carregar perfil: ${erro.message}`, 'error');
         logout();
